@@ -8,7 +8,7 @@ import { fetchMovies, type Movie } from "@/lib/movies-api";
 
 const searchSchema = z.object({ q: z.string().optional() });
 
-export const Route = createFileRoute("/movies")({
+export const Route = createFileRoute("/movies/")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
