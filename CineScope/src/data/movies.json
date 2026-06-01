@@ -5,7 +5,10 @@
     "year": 2023,
     "genre": "Sci-Fi",
     "poster": "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=800&q=80",
-    "description": "Em uma megalópole iluminada por hologramas, uma detetive descobre uma conspiração que pode reescrever a realidade."
+    "description": "Em uma megalópole iluminada por hologramas, uma detetive descobre uma conspiração que pode reescrever a realidade.",
+    "director": "Lena Morikawa",
+    "actors": ["Aya Tanaka", "Michael Reeves", "Sora Nakamura"],
+    "country": "Japão"
   },
   {
     "id": "2",
@@ -13,7 +16,10 @@
     "year": 2021,
     "genre": "Drama",
     "poster": "https://images.unsplash.com/photo-1502136969935-8d8eef54d77b?w=600&q=80",
-    "description": "Isolado em uma ilha remota, um guardião enfrenta os fantasmas do passado durante a tempestade do século."
+    "description": "Isolado em uma ilha remota, um guardião enfrenta os fantasmas do passado durante a tempestade do século.",
+    "director": "Thomas Whitaker",
+    "actors": ["Elliot Grayson", "Martha Doyle"],
+    "country": "Reino Unido"
   },
   {
     "id": "3",
@@ -21,7 +27,10 @@
     "year": 2024,
     "genre": "Ação",
     "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80",
-    "description": "Um piloto aposentado é arrastado para uma corrida clandestina que decidirá o destino de sua cidade."
+    "description": "Um piloto aposentado é arrastado para uma corrida clandestina que decidirá o destino de sua cidade.",
+    "director": "Carlos Montenegro",
+    "actors": ["Rafael Torres", "Bianca Prado", "Jonas Ribeiro"],
+    "country": "Brasil"
   },
   {
     "id": "4",
@@ -29,7 +38,10 @@
     "year": 2020,
     "genre": "Romance",
     "poster": "https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=600&q=80",
-    "description": "Dois desconhecidos cruzam caminhos em uma Lisboa chuvosa e descobrem que o amor às vezes nasce no caos."
+    "description": "Dois desconhecidos cruzam caminhos em uma Lisboa chuvosa e descobrem que o amor às vezes nasce no caos.",
+    "director": "Helena Duarte",
+    "actors": ["Inês Carvalho", "Miguel Faria"],
+    "country": "Portugal"
   },
   {
     "id": "5",
@@ -37,7 +49,10 @@
     "year": 2022,
     "genre": "Suspense",
     "poster": "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=600&q=80",
-    "description": "Uma expedição submarina encontra algo que deveria permanecer esquecido nas fossas do Pacífico."
+    "description": "Uma expedição submarina encontra algo que deveria permanecer esquecido nas fossas do Pacífico.",
+    "director": "Naomi Ishikawa",
+    "actors": ["Kenji Sato", "Laura Kim", "Victor Huang"],
+    "country": "Japão"
   },
   {
     "id": "6",
@@ -45,7 +60,10 @@
     "year": 2019,
     "genre": "Aventura",
     "poster": "https://images.unsplash.com/photo-1547700055-b61cacebece9?w=600&q=80",
-    "description": "Uma caravana cruza dunas infinitas em busca de uma cidade perdida e do segredo que ela protege."
+    "description": "Uma caravana cruza dunas infinitas em busca de uma cidade perdida e do segredo que ela protege.",
+    "director": "Omar Al-Fayed",
+    "actors": ["Layla Hassan", "Yusuf Karim"],
+    "country": "Emirados Árabes"
   },
   {
     "id": "7",
@@ -53,7 +71,10 @@
     "year": 2023,
     "genre": "Terror",
     "poster": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?w=600&q=80",
-    "description": "Uma família muda-se para uma casa centenária onde os sons da floresta carregam mais do que ecos."
+    "description": "Uma família muda-se para uma casa centenária onde os sons da floresta carregam mais do que ecos.",
+    "director": "Evelyn Marsh",
+    "actors": ["Daniel Cooper", "Emily Hart", "Sophie Lane"],
+    "country": "Estados Unidos"
   },
   {
     "id": "8",
@@ -61,7 +82,10 @@
     "year": 2018,
     "genre": "Musical",
     "poster": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=600&q=80",
-    "description": "Um jovem saxofonista busca seu lugar nos palcos enfumaçados de Nova Orleans nos anos 60."
+    "description": "Um jovem saxofonista busca seu lugar nos palcos enfumaçados de Nova Orleans nos anos 60.",
+    "director": "Harold Jenkins",
+    "actors": ["Louis Carter", "Nina Brooks"],
+    "country": "Estados Unidos"
   },
   {
     "id": "9",
@@ -69,7 +93,10 @@
     "year": 2024,
     "genre": "Sci-Fi",
     "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&q=80",
-    "description": "A tripulação de uma estação espacial precisa improvisar quando o contato com a Terra é perdido."
+    "description": "A tripulação de uma estação espacial precisa improvisar quando o contato com a Terra é perdido.",
+    "director": "Elena Voronina",
+    "actors": ["Ivan Petrov", "Sara Collins", "Mark Hughes"],
+    "country": "Rússia"
   },
   {
     "id": "10",
@@ -77,7 +104,10 @@
     "year": 2022,
     "genre": "Drama",
     "poster": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600&q=80",
-    "description": "Uma chef brasileira tenta reinventar a vida ao abrir um pequeno restaurante em Shibuya."
+    "description": "Uma chef brasileira tenta reinventar a vida ao abrir um pequeno restaurante em Shibuya.",
+    "director": "Akira Fujimoto",
+    "actors": ["Marina Costa", "Hiroshi Taneda"],
+    "country": "Japão"
   },
   {
     "id": "11",
@@ -85,7 +115,10 @@
     "year": 2021,
     "genre": "Mistério",
     "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80",
-    "description": "Uma jornalista recebe uma carta de uma autora que morreu há trinta anos — e nela, um pedido urgente."
+    "description": "Uma jornalista recebe uma carta de uma autora que morreu há trinta anos — e nela, um pedido urgente.",
+    "director": "Claire Beaumont",
+    "actors": ["Juliette Moreau", "Antoine Girard"],
+    "country": "França"
   },
   {
     "id": "12",
@@ -93,7 +126,10 @@
     "year": 2020,
     "genre": "Ação",
     "poster": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800&q=80",
-    "description": "Um ex-agente retorna à cidade dominada por corporações para impedir uma guerra urbana iminente."
+    "description": "Um ex-agente retorna à cidade dominada por corporações para impedir uma guerra urbana iminente.",
+    "director": "Marcus O'Neill",
+    "actors": ["Sean Walker", "Tara Blake"],
+    "country": "Estados Unidos"
   },
   {
     "id": "13",
@@ -101,7 +137,10 @@
     "year": 2017,
     "genre": "Aventura",
     "poster": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
-    "description": "Exploradores encontram um vale escondido onde o tempo parece seguir suas próprias regras."
+    "description": "Exploradores encontram um vale escondido onde o tempo parece seguir suas próprias regras.",
+    "director": "Anika Sørensen",
+    "actors": ["Lars Holm", "Freya Andersen"],
+    "country": "Noruega"
   },
   {
     "id": "14",
@@ -109,7 +148,10 @@
     "year": 2023,
     "genre": "Sci-Fi",
     "poster": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
-    "description": "Uma cientista descobre sinais misteriosos vindos do futuro e precisa decifrá-los antes que seja tarde."
+    "description": "Uma cientista descobre sinais misteriosos vindos do futuro e precisa decifrá-los antes que seja tarde.",
+    "director": "Maya Richter",
+    "actors": ["Elisa Brandt", "Jonas Weber"],
+    "country": "Alemanha"
   },
   {
     "id": "15",
@@ -117,7 +159,10 @@
     "year": 2019,
     "genre": "Suspense",
     "poster": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&q=80",
-    "description": "Uma vila costeira é abalada por eventos inexplicáveis após o surgimento de uma mancha vermelha no mar."
+    "description": "Uma vila costeira é abalada por eventos inexplicáveis após o surgimento de uma mancha vermelha no mar.",
+    "director": "Santiago Mendez",
+    "actors": ["Lucia Alvarez", "Pedro Castillo"],
+    "country": "Chile"
   },
   {
     "id": "16",
@@ -125,7 +170,10 @@
     "year": 2020,
     "genre": "Fantasia",
     "poster": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
-    "description": "Uma jovem descobre um portal para um reino onde memórias ganham forma física."
+    "description": "Uma jovem descobre um portal para um reino onde memórias ganham forma física.",
+    "director": "Elora Finch",
+    "actors": ["Mia Turner", "Oliver Grant"],
+    "country": "Canadá"
   },
   {
     "id": "17",
@@ -133,7 +181,10 @@
     "year": 2024,
     "genre": "Drama",
     "poster": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80",
-    "description": "Um arquiteto enfrenta seu passado enquanto projeta o maior arranha-céu da metrópole."
+    "description": "Um arquiteto enfrenta seu passado enquanto projeta o maior arranha-céu da metrópole.",
+    "director": "Daniel Kwon",
+    "actors": ["Eun Ji Park", "Gabriel Mendes"],
+    "country": "Coreia do Sul"
   },
   {
     "id": "18",
@@ -141,7 +192,10 @@
     "year": 2021,
     "genre": "Terror",
     "poster": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&q=80",
-    "description": "Uma mansão abandonada devolve cada som com um atraso perturbador — e mensagens ocultas."
+    "description": "Uma mansão abandonada devolve cada som com um atraso perturbador — e mensagens ocultas.",
+    "director": "Harper Quinn",
+    "actors": ["Nora Blake", "Ethan Cole"],
+    "country": "Estados Unidos"
   },
   {
     "id": "19",
@@ -149,7 +203,10 @@
     "year": 2018,
     "genre": "Aventura",
     "poster": "https://images.unsplash.com/photo-1500336624523-d727130c3328?w=800&q=80",
-    "description": "Uma piloto solitária tenta completar a travessia mais perigosa do hemisfério norte."
+    "description": "Uma piloto solitária tenta completar a travessia mais perigosa do hemisfério norte.",
+    "director": "Sigrid Nilsen",
+    "actors": ["Astrid Johansen", "Mikkel Larsen"],
+    "country": "Islândia"
   },
   {
     "id": "20",
@@ -157,6 +214,9 @@
     "year": 2016,
     "genre": "Romance",
     "poster": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80",
-    "description": "Um pianista recluso encontra inspiração ao conhecer uma fotógrafa que vê beleza no frio."
+    "description": "Um pianista recluso encontra inspiração ao conhecer uma fotógrafa que vê beleza no frio.",
+    "director": "Elena Markovic",
+    "actors": ["Ivana Petrovic", "Luka Marin"],
+    "country": "Sérvia"
   }
 ]

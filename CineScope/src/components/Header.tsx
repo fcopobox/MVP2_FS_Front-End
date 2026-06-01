@@ -11,6 +11,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        
         <Link to="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
             <Film className="h-5 w-5 text-primary-foreground" />
@@ -21,24 +22,37 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center gap-6">
-          <Link
-            to="/"
-            className={linkBase}
-            activeOptions={{ exact: true }}
-            activeProps={{ className: `${linkBase} ${activeStyle}` }}
-          >
-            Home
-          </Link>
-          <Link
-            to="/movies"
-            className={linkBase}
-            activeProps={{ className: `${linkBase} ${activeStyle}` }}
-          >
-            Filmes
-          </Link>
-          <Tooltip content="Busque e explore filmes do catálogo CineScope">
-            <HelpCircle className="h-4 w-4 cursor-help text-muted-foreground transition-colors hover:text-foreground" />
+
+          {/* Home */}
+          <Tooltip content="Página inicial do CineScope" side="bottom">
+            <Link
+              to="/"
+              className={linkBase}
+              activeOptions={{ exact: true }}
+              activeProps={{ className: `${linkBase} ${activeStyle}` }}
+            >
+              Home
+            </Link>
           </Tooltip>
+
+          {/* Movies */}
+          <Tooltip content="Catálogo de filmes" side="bottom">
+            <Link
+              to="/movies"
+              className={linkBase}
+              activeProps={{ className: `${linkBase} ${activeStyle}` }}
+            >
+              Filmes
+            </Link>
+          </Tooltip>
+
+          {/* Info */}
+          <Tooltip content="Informações sobre o projeto" side="bottom">
+            <Link to="/info">
+              <HelpCircle className="h-4 w-4 cursor-pointer text-muted-foreground transition-colors hover:text-foreground" />
+            </Link>
+          </Tooltip>
+
         </nav>
       </div>
     </header>

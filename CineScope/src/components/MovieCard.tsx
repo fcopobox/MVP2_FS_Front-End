@@ -24,7 +24,7 @@ export function MovieCard({ movie }: Props) {
           {movie.genre}
         </span>
         <Link to="/movies/$id" params={{ id: movie.id }} className="mt-2">
-          <Button size="sm" className="w-full">Ver detalhes</Button>
+          <Button size="sm" className="w-full">Ver detalhes...</Button>
         </Link>
       </div>
     </article>

@@ -5,6 +5,9 @@ export type Movie = {
   genre: string;
   poster: string;
   description: string;
+  director: string;
+  actors: string[];
+  country: string;
 };
 
 import data from "@/data/movies.json";
