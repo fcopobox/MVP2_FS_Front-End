@@ -30,11 +30,17 @@ function Index() {
     return () => { active = false; };
   }, []);
 
-function handleSearch(query: string, genre: string) {
+function handleSearch(query: string, genre?: string) {
   const search: any = {};
 
-  if (query.trim()) search.q = query.trim();
-  if (genre && genre !== "all") search.genre = genre;
+  if (query.trim()) {
+    search.q = query.trim();
+  }
+
+  // Se o gênero for undefined, remove o filtro
+  if (genre) {
+    search.genre = genre;
+  }
 
   navigate({ to: "/movies", search });
 }
@@ -61,7 +67,7 @@ function handleSearch(query: string, genre: string) {
               <SearchBar
                 initialValue=""
                 initialGenre="all"
-                onSearch={handleSearch}
+                onSearch={handleSearch} // aqui está apontado o erro
               />
             </div>
           </div>

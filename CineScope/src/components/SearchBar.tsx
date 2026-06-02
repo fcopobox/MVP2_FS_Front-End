@@ -5,7 +5,7 @@ import { Button } from "./Button";
 type Props = {
   initialValue?: string;
   initialGenre?: string;
-  onSearch: (query: string, genre: string) => void;
+  onSearch: (query: string, genre?: string) => void; 
   placeholder?: string;
 };
 
@@ -20,7 +20,7 @@ export function SearchBar({
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    onSearch(value.trim(), genre);
+    onSearch(value.trim(), genre === "all" ? undefined : genre); 
   }
 
   return (
@@ -36,7 +36,7 @@ export function SearchBar({
 
             // Quando o campo fica vazio, recarrega o catálogo completo
             if (newValue.trim() === "") {
-              onSearch("", genre);
+              onSearch("", genre === "all" ? undefined : genre);
             }
           }}
           placeholder={placeholder}
@@ -50,7 +50,9 @@ export function SearchBar({
         onChange={(e) => {
           const newGenre = e.target.value;
           setGenre(newGenre);
-          onSearch(value, newGenre);
+
+          // Se "all", remove o filtro
+          onSearch(value, newGenre === "all" ? undefined : newGenre);
         }}
         className="h-12 rounded-lg border border-border bg-input px-3 text-sm text-foreground"
       >
@@ -60,6 +62,7 @@ export function SearchBar({
         <option value="comedia">Comédia</option>
         <option value="drama">Drama</option>
         <option value="fantasia">Fantasia</option>
+        <option value="mistério">Mistério</option>
         <option value="musical">Musical</option>
         <option value="romance">Romance</option>
         <option value="sci-fi">Sci‑Fi</option>

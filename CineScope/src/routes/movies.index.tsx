@@ -71,7 +71,7 @@ function handleSearch(query: string, genre?: string) {
       ) : movies.length === 0 ? (
         <EmptyState
           title="Nenhum filme encontrado"
-          message="Tente buscar por outro título ou limpe a busca."
+          message="Tente buscar por outro título, gênero ou limpe a busca."
         />
       ) : (
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 animate-fade-in"> 
