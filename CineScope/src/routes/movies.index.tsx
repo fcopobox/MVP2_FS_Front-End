@@ -58,7 +58,11 @@ function handleSearch(query: string, genre?: string) {
             {q ? <>Resultados para <span className="text-foreground font-medium">"{q}"</span></> : "Explore todos os filmes disponíveis."}
           </p>
         </div>
-        <SearchBar initialValue={q ?? ""} onSearch={handleSearch} />
+        <SearchBar
+          initialValue={q ?? ""}
+          initialGenre={genre ?? "all"}   
+          onSearch={handleSearch}
+        />
       </div>
 
       {error ? (
