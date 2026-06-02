@@ -23,7 +23,15 @@ export function SearchBar({ initialValue = "", onSearch, placeholder = "Busque p
         <input
           type="search"
           value={value}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => {
+            const newValue = e.target.value;
+            setValue(newValue);
+
+            // Quando o campo fica vazio, recarrega o catálogo completo
+            if (newValue.trim() === "") {
+              onSearch("");
+            }
+    }}
           placeholder={placeholder}
           aria-label="Buscar filmes"
           className="h-12 w-full rounded-lg border border-border bg-input pl-11 pr-4 text-sm text-foreground placeholder:text-muted-foreground transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/50"
