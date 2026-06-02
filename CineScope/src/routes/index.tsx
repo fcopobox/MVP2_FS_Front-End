@@ -11,7 +11,7 @@ import { fetchMovies, type Movie } from "@/lib/movies-api";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CineScope — Descubra novos filmes" },
+      { title: "CineScope — Home" },
       { name: "description", content: "Explore um catálogo curado de filmes no CineScope. Busque, descubra e mergulhe em sinopses." },
       { property: "og:title", content: "CineScope — Descubra novos filmes" },
       { property: "og:description", content: "Explore um catálogo curado de filmes no CineScope." },

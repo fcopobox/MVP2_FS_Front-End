@@ -12,7 +12,7 @@ export const Route = createFileRoute("/movies/")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Filmes — CineScope" },
+      { title: "CineScope — Filmes" },
       { name: "description", content: "Navegue pelo catálogo completo de filmes do CineScope." },
       { property: "og:title", content: "Filmes — CineScope" },
       { property: "og:description", content: "Navegue pelo catálogo completo de filmes do CineScope." },
@@ -66,7 +66,7 @@ function MoviesPage() {
           message="Tente buscar por outro título ou limpe a busca."
         />
       ) : (
-        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 animate-fade-in">
+        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 animate-fade-in"> 
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
