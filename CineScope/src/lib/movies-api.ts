@@ -19,10 +19,22 @@ function delay<T>(value: T, ms = 600): Promise<T> {
   return new Promise((resolve) => setTimeout(() => resolve(value), ms));
 }
 
-export async function fetchMovies(query?: string): Promise<Movie[]> {
-  const result = query
-    ? movies.filter((m) => m.title.toLowerCase().includes(query.toLowerCase()))
-    : movies;
+export async function fetchMovies(params?: { q?: string; genre?: string }): Promise<Movie[]> {
+  const { q, genre } = params || {};
+  let result = movies;
+
+  // Filtro por título
+  if (q && q.trim() !== "") {
+    result = result.filter((m) =>
+      m.title.toLowerCase().includes(q.toLowerCase())
+    );
+  }
+
+  // Filtro por gênero
+  if (genre && genre !== "all") {
+    result = result.filter((m) => m.genre.toLowerCase() === genre.toLowerCase());
+  }
+
   return delay(result);
 }
 

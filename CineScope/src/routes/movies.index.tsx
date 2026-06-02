@@ -6,7 +6,10 @@ import { MovieCard } from "@/components/MovieCard";
 import { Loader } from "@/components/Loader";
 import { fetchMovies, type Movie } from "@/lib/movies-api";
 
-const searchSchema = z.object({ q: z.string().optional() });
+const searchSchema = z.object({ 
+  q: z.string().optional(),
+  genre: z.string().optional() 
+});
 
 export const Route = createFileRoute("/movies/")({
   validateSearch: searchSchema,
@@ -22,7 +25,7 @@ export const Route = createFileRoute("/movies/")({
 });
 
 function MoviesPage() {
-  const { q } = Route.useSearch();
+  const { q, genre } = Route.useSearch();
   const navigate = useNavigate();
   const [movies, setMovies] = useState<Movie[] | null>(null);
   const [error, setError] = useState(false);
@@ -31,15 +34,20 @@ function MoviesPage() {
     let active = true;
     setMovies(null);
     setError(false);
-    fetchMovies(q)
+    fetchMovies({ q, genre })
       .then((data) => active && setMovies(data))
       .catch(() => active && setError(true));
     return () => { active = false; };
-  }, [q]);
+  }, [q, genre]);
 
-  function handleSearch(query: string) {
-    navigate({ to: "/movies", search: query ? { q: query } : {} });
-  }
+function handleSearch(query: string, genre?: string) {
+  const search: any = {};
+
+  if (query.trim()) search.q = query.trim();
+  if (genre && genre !== "all") search.genre = genre;
+
+  navigate({ to: "/movies", search });
+}
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

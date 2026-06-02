@@ -30,9 +30,14 @@ function Index() {
     return () => { active = false; };
   }, []);
 
-  function handleSearch(query: string) {
-    navigate({ to: "/movies", search: query ? { q: query } : {} });
-  }
+function handleSearch(query: string, genre: string) {
+  const search: any = {};
+
+  if (query.trim()) search.q = query.trim();
+  if (genre && genre !== "all") search.genre = genre;
+
+  navigate({ to: "/movies", search });
+}
 
   return (
     <main>
@@ -53,7 +58,11 @@ function Index() {
               rápida e inspirada nas melhores plataformas de streaming.
             </p>
             <div className="mt-10 flex justify-center">
-              <SearchBar onSearch={handleSearch} />
+              <SearchBar
+                initialValue=""
+                initialGenre="all"
+                onSearch={handleSearch}
+              />
             </div>
           </div>
         </div>
