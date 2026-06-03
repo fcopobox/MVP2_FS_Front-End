@@ -24,6 +24,7 @@ Será necessário ter o **Node.js** e o **npm** instalados em sua máquina.
 
 > Verifique a instalação executando:
 -----------------------------------
+```bash
 node -v
 npm -v
 -----------------------------------
