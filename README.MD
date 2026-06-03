@@ -1,7 +1,7 @@
 #####################################################################################
 #
 #                         MVP2 CineScope — Catálogo de Filmes
-#                    Pós Graduação em Full Stack - PUC Rio - 2026
+#                Pós Graduação em Full Stack Development - PUC Rio - 2026
 #                       
 #                               Francisco Silveira
 #
