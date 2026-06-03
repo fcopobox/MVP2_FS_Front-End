@@ -22,15 +22,20 @@ O projeto utiliza **TanStack Router** para gerenciamento de rotas, **TailwindCSS
 
 Será necessário ter o **Node.js** e o **npm** instalados em sua máquina.
 
-> Verifique a instalação executando:
+> Verifique a instalação do Node.js executando:
 -----------------------------------
 `node -v`
+-----------------------------------
+> Instale o Node.js caso o comando não retorne uma mensagem com a versão instalada
+
+> Da mesma forma, verifique a instalação do npm executando:
+-----------------------------------
 `npm -v`
 -----------------------------------
 
-Após clonar o repositório, acesse o diretório raiz do projeto pelo terminal.
+Após clonar o repositório, abra no Visual Studio Code (ou outra IDE de sua preferência) e acesse o diretório raiz do projeto pelo terminal.
 
-> Para instalar as dependências:
+> Para instalar as dependências execute o comando:
 -----------------------------------
 `npm install`
 -----------------------------------
