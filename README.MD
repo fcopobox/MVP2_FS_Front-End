@@ -92,6 +92,6 @@ npm run preview
 
 ## Licença
 
-Projeto acadêmico desenvolvido para fins educacionais na **PUC-Rio**, sob orientação da disciplina de **Desenvolvimento Full Stack Avançado**.
+Projeto acadêmico desenvolvido com fins educacionais para a Disciplina de **Desenvolvimento Full Stack Avançado** da **PUC-Rio**.
 
 ---
