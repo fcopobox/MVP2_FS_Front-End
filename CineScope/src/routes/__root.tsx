@@ -12,6 +12,7 @@ import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { Header } from "@/components/Header";
 
+{/* Página de fallback para rotas não encontradas */}
 function NotFoundComponent() {
   return (
     <div className="flex min-h-[80vh] items-center justify-center bg-gradient-hero px-4">
@@ -34,6 +35,7 @@ function NotFoundComponent() {
   );
 }
 
+{/* Componente para exibir erros  */}
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
@@ -69,6 +71,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+{/* Componente para exibir página de fallback */}
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -111,6 +114,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
+{/* Componente para exibir o shell da aplicação */}
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
@@ -125,6 +129,7 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+{/* Componente para exibir o conteúdo principal da aplicação */}
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 

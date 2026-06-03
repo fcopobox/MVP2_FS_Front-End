@@ -24,6 +24,7 @@ export const Route = createFileRoute("/movies/")({
   component: MoviesPage,
 });
 
+// Componente para exibir a página de listagem de filmes
 function MoviesPage() {
   const { q, genre } = Route.useSearch();
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ function MoviesPage() {
     return () => { active = false; };
   }, [q, genre]);
 
+  // Função para lidar com a busca de filmes a partir do SearchBar
 function handleSearch(query: string, genre?: string) {
   const search: any = {};
 
@@ -88,6 +90,7 @@ function handleSearch(query: string, genre?: string) {
   );
 }
 
+// Componente para exibir estados vazios, como erros ou ausência de resultados
 function EmptyState({ title, message }: { title: string; message: string }) {
   return (
     <div className="rounded-2xl border border-dashed border-border bg-card/40 py-20 text-center">

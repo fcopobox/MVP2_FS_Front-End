@@ -8,7 +8,7 @@ type Props = {
   onSearch: (query: string, genre?: string) => void; 
   placeholder?: string;
 };
-
+// Componente para exibir a barra de busca com filtro de gênero
 export function SearchBar({
   initialValue = "",
   initialGenre = "all",
@@ -18,6 +18,7 @@ export function SearchBar({
   const [value, setValue] = useState(initialValue);
   const [genre, setGenre] = useState(initialGenre);
 
+  // Função para lidar com o envio do formulário de busca
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     onSearch(value.trim(), genre === "all" ? undefined : genre); 

@@ -15,6 +15,7 @@ export const Route = createFileRoute("/movies/$id")({
   component: MovieDetail,
 });
 
+// Componente para exibir detalhes de um filme específico
 function MovieDetail() {
   const { id } = Route.useParams();
   const navigate = useNavigate();

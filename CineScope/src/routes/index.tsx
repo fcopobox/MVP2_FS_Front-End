@@ -20,6 +20,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+// Componente para exibir a página inicial com cards para filmes populares e barra de busca
 function Index() {
   const navigate = useNavigate();
   const [popular, setPopular] = useState<Movie[] | null>(null);
@@ -30,6 +31,7 @@ function Index() {
     return () => { active = false; };
   }, []);
 
+  // Função para lidar com a busca de filmes a partir do SearchBar
 function handleSearch(query: string, genre?: string) {
   const search: any = {};
 
