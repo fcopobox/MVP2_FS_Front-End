@@ -64,7 +64,7 @@ Abra o link no navegador para visualizar o CineScope em execução.
 
 ## Tecnologias utilizadas
 
-- **React 18**  
+- **React**  
 - **Vite**  
 - **TypeScript**  
 - **TanStack Router**  
