@@ -7,7 +7,7 @@
 #
 #####################################################################################
 
-Este projeto é o **Front-End** para o MVP da Disciplina **Desenvolvimento Full Stack Avançado**.
+Este projeto é o MVP da Sprint **Desenvolvimento Front-End Avançado**.
 
 ---
 
