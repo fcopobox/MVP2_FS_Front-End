@@ -52,12 +52,13 @@ Abra o link no navegador para visualizar o CineScope em execução.
 
 ## Estrutura do projeto
 
-- `src/components` → Componentes reutilizáveis (SearchBar, MovieCard, Loader, etc.)  
-- `src/routes` → Páginas e rotas configuradas com TanStack Router  
-- `src/lib` → Funções auxiliares e integração com a API de filmes  
-- `public/movies.json` → Base de dados local de filmes  
-- `vite.config.ts` → Configuração do Vite  
-- `package.json` → Dependências e scripts do projeto  
+- `src/components` -> Componentes reutilizáveis (SearchBar, MovieCard, Loader, etc.)  
+- `src/routes` -> Páginas e rotas configuradas com TanStack Router  
+- `src/lib` -> Funções auxiliares e integração com a API de filmes  
+- `src/data/movies.json` -> Base de dados local de filmes  
+- `public/data/images` -> Imagens utilizadas para os cards de filmes
+- `vite.config.ts` -> Configuração do Vite  
+- `package.json` -> Dependências e scripts do projeto  
 
 ---
 
@@ -94,4 +95,3 @@ npm run preview
 Projeto acadêmico desenvolvido para fins educacionais na **PUC-Rio**, sob orientação da disciplina de **Desenvolvimento Full Stack Avançado**.
 
 ---
-
