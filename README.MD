@@ -24,23 +24,22 @@ Será necessário ter o **Node.js** e o **npm** instalados em sua máquina.
 
 > Verifique a instalação executando:
 -----------------------------------
-```bash
-node -v
-npm -v
+`node -v`
+`npm -v`
 -----------------------------------
 
 Após clonar o repositório, acesse o diretório raiz do projeto pelo terminal.
 
 > Para instalar as dependências:
 -----------------------------------
-npm install
+`npm install`
 -----------------------------------
 
 Este comando instala todas as bibliotecas descritas no arquivo `package.json`.
 
 > Para executar o projeto em modo de desenvolvimento:
 -----------------------------------
-npm run dev
+`npm run dev`
 -----------------------------------
 
 O terminal exibirá o endereço local:
@@ -81,12 +80,12 @@ Para interromper a execução, pressione `CTRL + C` no terminal.
 
 Para gerar a versão de produção:
 -----------------------------------
-npm run build
+`npm run build`
 -----------------------------------
 
 Para visualizar o build localmente:
 -----------------------------------
-npm run preview
+`npm run preview`
 -----------------------------------
 
 ---
