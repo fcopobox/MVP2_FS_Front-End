@@ -1,3 +1,7 @@
+// Módulo para simular uma API de filmes, fornecendo funções para buscar filmes com base 
+// em parâmetros de pesquisa e obter detalhes de um filme específico, utilizando um pequeno
+// delay para simular a latência da rede
+
 export type Movie = {
   id: string;
   title: string;

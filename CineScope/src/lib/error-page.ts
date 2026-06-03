@@ -1,3 +1,5 @@
+// Módulo para renderizar uma página de erro genérica, exibida quando ocorre um erro durante 
+// o carregamento da página
 export function renderErrorPage(): string {
   return `<!doctype html>
 <html lang="en">

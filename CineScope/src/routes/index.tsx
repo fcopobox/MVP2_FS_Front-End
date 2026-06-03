@@ -8,6 +8,7 @@ import { Loader } from "@/components/Loader";
 import { Button } from "@/components/Button";
 import { fetchMovies, type Movie } from "@/lib/movies-api";
 
+// Página inicial com hero e seção de filmes populares
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [

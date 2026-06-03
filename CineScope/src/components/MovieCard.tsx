@@ -2,6 +2,9 @@ import { Link } from "@tanstack/react-router";
 import type { Movie } from "@/lib/movies-api";
 import { Button } from "./Button";
 
+// Componente de card para exibir informações básicas de um filme, como pôster, título, ano e gênero,
+// com um botão para acessar detalhes do filme usando Link do React Router
+
 type Props = { movie: Movie };
 
 export function MovieCard({ movie }: Props) {

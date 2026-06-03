@@ -1,5 +1,8 @@
 import { useState, type ReactNode } from "react";
 
+// Componente de tooltip reutilizável para exibir informações adicionais ao passar o mouse 
+// ou focar em um elemento, com posicionamento configurável através da prop "side"
+
 type Props = {
   content: string;
   children: ReactNode;

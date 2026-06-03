@@ -2,6 +2,8 @@ import { useState, type FormEvent } from "react";
 import { Search } from "lucide-react";
 import { Button } from "./Button";
 
+// Componente para exibir a barra de busca com filtro de gênero
+
 type Props = {
   initialValue?: string;
   initialGenre?: string;

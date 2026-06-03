@@ -6,11 +6,15 @@ import { MovieCard } from "@/components/MovieCard";
 import { Loader } from "@/components/Loader";
 import { fetchMovies, type Movie } from "@/lib/movies-api";
 
+// Rota para exibir a página de listagem de filmes, com validação dos parâmetros de busca usando Zod,
+// e renderizando a lista de filmes ou mensagens de erro/estado vazio conforme o resultado da busca
+
 const searchSchema = z.object({ 
   q: z.string().optional(),
   genre: z.string().optional() 
 });
 
+// Esquema de validação para os parâmetros de busca, garantindo que sejam strings opcionais
 export const Route = createFileRoute("/movies/")({
   validateSearch: searchSchema,
   head: () => ({
@@ -30,7 +34,7 @@ function MoviesPage() {
   const navigate = useNavigate();
   const [movies, setMovies] = useState<Movie[] | null>(null);
   const [error, setError] = useState(false);
-
+// Efeito para buscar filmes sempre que os parâmetros de busca mudarem
   useEffect(() => {
     let active = true;
     setMovies(null);

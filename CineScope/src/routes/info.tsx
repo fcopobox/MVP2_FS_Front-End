@@ -1,6 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Link } from '@tanstack/react-router'   
 
+// Página de informações sobre o projeto, incluindo autor, funcionalidades, 
+// tecnologias utilizadas e requisitos atendidos, com um botão para retornar à Home
+
 export const Route = createFileRoute("/info")({
   head: () => ({
     meta: [

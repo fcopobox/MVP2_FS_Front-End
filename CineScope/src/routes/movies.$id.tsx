@@ -5,6 +5,9 @@ import { Loader } from "@/components/Loader";
 import { Button } from "@/components/Button";
 import { fetchMovie, type Movie } from "@/lib/movies-api";
 
+// Rota para exibir detalhes de um filme específico, utilizando o ID do filme como parâmetro de rota dinâmica,
+// e renderizando o componente MovieDetail para mostrar as informações do filme selecionado
+
 export const Route = createFileRoute("/movies/$id")({
   head: () => ({
     meta: [
@@ -28,7 +31,8 @@ function MovieDetail() {
     fetchMovie(id).then((m) => active && setMovie(m));
     return () => { active = false; };
   }, [id]);
-
+// Função para lidar com o clique no botão de voltar, usando history.back() 
+// se possível ou navegando para a lista de filmes
   function goBack() {
     if (typeof window !== "undefined" && window.history.length > 1) {
       window.history.back();

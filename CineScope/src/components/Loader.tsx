@@ -1,5 +1,8 @@
 import { Loader2 } from "lucide-react";
 
+// Componente de loader reutilizável com ícone animado e texto opcional,
+// usado para indicar carregamento em várias partes da aplicação
+
 type Props = { label?: string; className?: string };
 
 export function Loader({ label = "Carregando...", className = "" }: Props) {

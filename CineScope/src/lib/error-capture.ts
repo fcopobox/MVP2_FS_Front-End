@@ -1,9 +1,10 @@
-// Captures the original Error out-of-band so server.ts can recover the stack
-// when h3 has already swallowed the throw into a generic 500 Response.
+// Módulo para capturar erros globais e rejeições de promessas não tratadas, 
+// armazenando o último erro capturado por um curto período de tempo (TTL) para consumo posterior
 
 let lastCapturedError: { error: unknown; at: number } | undefined;
 const TTL_MS = 5_000;
 
+// Função para registrar um erro capturado, armazenando o erro e o timestamp atual
 function record(error: unknown) {
   lastCapturedError = { error, at: Date.now() };
 }
@@ -15,6 +16,8 @@ if (typeof globalThis.addEventListener === "function") {
   );
 }
 
+// Função para consumir o último erro capturado, verificando se ainda está dentro do TTL
+//  e retornando o erro ou undefined se expirado ou inexistente
 export function consumeLastCapturedError(): unknown {
   if (!lastCapturedError) return undefined;
   if (Date.now() - lastCapturedError.at > TTL_MS) {

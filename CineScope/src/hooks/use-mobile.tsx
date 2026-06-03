@@ -1,5 +1,7 @@
 import * as React from "react";
 
+// Hook para detectar se o dispositivo é móvel com base na largura da tela, usando matchMedia para reatividade
+
 const MOBILE_BREAKPOINT = 768;
 
 export function useIsMobile() {

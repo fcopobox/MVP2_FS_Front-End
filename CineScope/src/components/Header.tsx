@@ -2,6 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { Film, HelpCircle } from "lucide-react";
 import { Tooltip } from "./Tooltip";
 
+// Componente de header fixo com navegação entre Home, Filmes e Info, usando Link do React Router 
+// para navegação sem recarga e Tooltip para acessibilidade
+
 const linkBase =
   "relative px-1 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
 const activeStyle =

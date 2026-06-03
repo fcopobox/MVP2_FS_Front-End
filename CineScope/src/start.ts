@@ -1,6 +1,8 @@
 import { createStart, createMiddleware } from "@tanstack/react-start";
-
 import { renderErrorPage } from "./lib/error-page";
+
+// Configuração da instância de start do React Start, incluindo um middleware para tratamento de erros
+// que captura exceções durante o processamento das requisições
 
 const errorMiddleware = createMiddleware().server(async ({ next }) => {
   try {
