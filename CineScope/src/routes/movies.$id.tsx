@@ -1,5 +1,8 @@
-import { createFileRoute, useNavigate, useLocation } from "@tanstack/react-router";
+// Importação de hooks do React e do TanStack Router
+import { useNavigate, useLocation } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+
+import { createFileRoute} from "@tanstack/react-router";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
 import { Loader } from "@/components/Loader";
 import { Button } from "@/components/Button";
