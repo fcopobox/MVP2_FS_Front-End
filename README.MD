@@ -1,7 +1,7 @@
 #####################################################################################
 #
-#                         MVP2 CineScope — Catálogo de Filmes
-#                Pós Graduação em Full Stack Development - PUC Rio - 2026
+#                         MVP CineScope — Catálogo de Filmes
+#                Pós-Graduação em Full Stack Development - PUC Rio - 2026
 #                       
 #                               Francisco Silveira
 #
@@ -48,7 +48,7 @@ Este comando instala todas as bibliotecas descritas no arquivo `package.json`.
 -----------------------------------
 
 O terminal exibirá o endereço local:
-Local: http://localhost:8080
+http://localhost:8080
 
 
 Abra o link no navegador para visualizar o CineScope em execução.
