@@ -33,7 +33,7 @@ Será necessário ter o **Node.js** e o **npm** instalados em sua máquina.
 `npm -v`
 -----------------------------------
 
-Após clonar o repositório, abra no Visual Studio Code (ou outra IDE de sua preferência) e acesse o diretório raiz do projeto pelo terminal.
+Após clonar o repositório, abra no Visual Studio Code (ou outra IDE de sua preferência) e acesse o diretório raiz do projeto (//CineScope) pelo terminal.
 
 > Para instalar as dependências execute o comando:
 -----------------------------------
@@ -42,7 +42,7 @@ Após clonar o repositório, abra no Visual Studio Code (ou outra IDE de sua pre
 
 Este comando instala todas as bibliotecas descritas no arquivo `package.json`.
 
-> Para executar o projeto em modo de desenvolvimento:
+> Para executar o projeto em modo de desenvolvimento:npn 
 -----------------------------------
 `npm run dev`
 -----------------------------------
